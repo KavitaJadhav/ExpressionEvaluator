@@ -17,4 +17,10 @@
         <mkdir dir = "ExpressionEvaluator/build/classes"></mkdir>
         <javac srcdir = "src" destdir = "ExpressionEvaluator/build/classes"></javac>
     </target>
+    <target name = "compileTest" depends = "compile">
+        <copy file = "ExternalLibraries/junit-4.10.jar" todir = "ExpressionEvaluator/External-Libraries"></copy>
+        <mkdir dir = "ExpressionEvaluator/build/TestClasses"></mkdir>
+        <javac srcdir = "test" destdir = "ExpressionEvaluator/build/TestClasses"
+               classpath = "ExpressionEvaluator/build/classes;ExpressionEvaluator/External-Libraries/junit-4.10.jar"></javac>
+    </target>
 </project>
