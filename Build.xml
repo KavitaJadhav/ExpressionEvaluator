@@ -6,4 +6,11 @@
         <delete dir = "ExpressionEvaluator/build/classes"></delete>
         <delete dir = "ExpressionEvaluator/build/TestClasses"></delete>
     </target>
+
+    <target name = "createDir" >
+        <mkdir dir = "ExpressionEvaluator"></mkdir>
+        <mkdir dir = "ExpressionEvaluator/bin"></mkdir>
+        <mkdir dir="ExpressionEvaluator/lib"></mkdir>
+        <mkdir dir = "ExpressionEvaluator/External-Libraries"></mkdir>
+    </target>
 </project>
