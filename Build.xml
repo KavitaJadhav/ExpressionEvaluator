@@ -13,4 +13,8 @@
         <mkdir dir="ExpressionEvaluator/lib"></mkdir>
         <mkdir dir = "ExpressionEvaluator/External-Libraries"></mkdir>
     </target>
+    <target name = "compile" depends ="createDir">
+        <mkdir dir = "ExpressionEvaluator/build/classes"></mkdir>
+        <javac srcdir = "src" destdir = "ExpressionEvaluator/build/classes"></javac>
+    </target>
 </project>
