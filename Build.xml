@@ -23,4 +23,10 @@
         <javac srcdir = "test" destdir = "ExpressionEvaluator/build/TestClasses"
                classpath = "ExpressionEvaluator/build/classes;ExpressionEvaluator/External-Libraries/junit-4.10.jar"></javac>
     </target>
+    <target name = "runTest" depends = "compileTest">
+        <java classname="org.junit.runner.JUnitCore"
+              classpath = "ExpressionEvaluator/External-Libraries/junit-4.10.jar;ExpressionEvaluator/build/classes;ExpressionEvaluator/build/TestClasses">
+            <arg value="kavitama.unixtools.ExpEvalTest"/>
+        </java>
+    </target>
 </project>
