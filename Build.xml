@@ -1,0 +1,10 @@
+<project name = "ExpressionEvaluator">
+    <target name="clean">
+        <delete dir = "ExpressionEvaluator"></delete>
+        <delete dir = "ExpressionEvaluator/lib"></delete>
+        <delete dir = "ExpressionEvaluator/built"></delete>
+        <delete dir = "ExpressionEvaluator/build/classes"></delete>
+        <delete dir = "ExpressionEvaluator/build/TestClasses"></delete>
+    </target>
+
+</project>
