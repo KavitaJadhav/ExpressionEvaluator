@@ -1,1 +1,1 @@
-java -cp $EXP_EVAL/lib/ExpEval.jar C.travis.ymllient.ExpEvalMain $1
+java -cp $EXP_EVAL/lib/ExpEval.jar Client.ExpEvalMain $1

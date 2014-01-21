@@ -52,7 +52,7 @@
     </target>
 
     <target name="copyShells" depends="deleteClasses">
-        <copyfile src="jk_ExpEval.sh" dest="ExpEval/bin" />
+        <copy file = "jk_ExpEval.sh" todir="ExpEval/bin" />
     </target>
 
     <target name="copyReadMe" depends="copyShells">
