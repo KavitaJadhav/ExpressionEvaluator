@@ -2,6 +2,7 @@
   <dictionary name="kavitama">
     <words>
       <w>eval</w>
+      <w>substract</w>
     </words>
   </dictionary>
 </component>

@@ -31,4 +31,23 @@ public class ExpEvalTest extends ExpEval {
 
         assertEquals(actual ,expected);
     }
+
+    @Test
+    public void SubstractTwoIntNumber() throws Exception {
+        float num1 = 10 ,num2 =20;
+        float expected = (float) 30.0;
+
+        float actual = substract(num1, num2);
+
+        assertEquals(actual ,expected);
+    }@Test
+    public void evaluateExpressionSubstractTwoIntNumber() throws Exception {
+        String expression = "10 - 5";
+        int expected = 5;
+
+        int actual = evaluateExpression(expression);
+
+        assertEquals(actual ,expected);
+    }
+
 }
