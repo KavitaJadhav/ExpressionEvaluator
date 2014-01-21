@@ -4,7 +4,7 @@ Expression Evaluator
 
 configuration 
 -------------
-  Your classPath must contain 'EXP_EVAL' variable
+  Your classPath must contain 'EVALUATOR' variable
   
   
 
