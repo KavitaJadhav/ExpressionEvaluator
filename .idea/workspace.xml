@@ -67,8 +67,10 @@
       <file leaf-file-name="ExpEval.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/kavitama/ExpressionEvaluator/ExpEval.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="144" selection-end="144" vertical-scroll-proportion="0.28" vertical-offset="0" max-vertical-offset="425">
-              <folding />
+            <state line="9" column="5" selection-start="195" selection-end="195" vertical-scroll-proportion="0.23647605" vertical-offset="0" max-vertical-offset="647">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,7 +78,7 @@
       <file leaf-file-name="ExpEvalTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test/kavitama/ExpressionEvaluator/ExpEvalTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
               <folding />
             </state>
           </provider>
@@ -85,7 +87,7 @@
       <file leaf-file-name="ExpEvalMain.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Client/ExpEvalMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="5" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+            <state line="7" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
               <folding />
             </state>
           </provider>
@@ -109,9 +111,9 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Build.xml" />
         <option value="$PROJECT_DIR$/jk_ExpEval.sh" />
-        <option value="$PROJECT_DIR$/src/Client/ExpEvalMain.java" />
-        <option value="$PROJECT_DIR$/Test/kavitama/ExpressionEvaluator/ExpEvalTest.java" />
         <option value="$PROJECT_DIR$/src/kavitama/ExpressionEvaluator/ExpEval.java" />
+        <option value="$PROJECT_DIR$/Test/kavitama/ExpressionEvaluator/ExpEvalTest.java" />
+        <option value="$PROJECT_DIR$/src/Client/ExpEvalMain.java" />
       </list>
     </option>
   </component>
@@ -182,6 +184,10 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExpressionEvaluator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -240,7 +246,7 @@
       <recent name="D:\projects\ExpressionEvaluator\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExpEvalTest.add">
+  <component name="RunManager" selected="JUnit.ExpEvalTest.evaluateExpressionAddTwoIntNumber1">
     <configuration default="false" name="ExpEvalMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Client.ExpEvalMain" />
       <option name="VM_PARAMETERS" value="" />
@@ -301,28 +307,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="ExpEvalTest.testSomething" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ExpressionEvaluator" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="kavitama.ExpressionEvaluator" />
-      <option name="MAIN_CLASS_NAME" value="kavitama.ExpressionEvaluator.ExpEvalTest" />
-      <option name="METHOD_NAME" value="testSomething" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="ExpEvalTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ExpressionEvaluator" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -334,6 +318,28 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ExpEvalTest.evaluateExpressionAddTwoIntNumber1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExpressionEvaluator" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="kavitama.ExpressionEvaluator" />
+      <option name="MAIN_CLASS_NAME" value="kavitama.ExpressionEvaluator.ExpEvalTest" />
+      <option name="METHOD_NAME" value="evaluateExpressionAddTwoIntNumber1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -476,16 +482,16 @@
       <item index="0" class="java.lang.String" itemvalue="Application.ExpEvalMain" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.ExpEvalTest" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.evaluateExpression" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.testSomething" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.add" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.add" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.evaluateExpressionAddTwoIntNumber1" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.add" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ExpEvalMain" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.testSomething" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ExpEvalTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.evaluateExpression" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.evaluateExpressionAddTwoIntNumber1" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ExpEvalTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.evaluateExpression" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.add" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ExpEvalMain" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -521,7 +527,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="779" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -539,14 +545,39 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32986626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32921174" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32921174" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921174" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986626" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32986626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USERS">
@@ -573,7 +604,9 @@
     <entry file="file://$PROJECT_DIR$/src/kavitama/ExpressionEvaluator/ExpEval.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="13" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -608,14 +641,18 @@
     <entry file="file://$PROJECT_DIR$/src/kavitama/ExpressionEvaluator/ExpEval.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="16" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="238">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kavitama/ExpressionEvaluator/ExpEval.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="17" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="238">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -627,7 +664,9 @@
     <entry file="file://$PROJECT_DIR$/src/kavitama/ExpressionEvaluator/ExpEval.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -646,7 +685,9 @@
     <entry file="file://$PROJECT_DIR$/src/kavitama/ExpressionEvaluator/ExpEval.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -681,24 +722,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/jre/lib/rt.jar!/sun/misc/FloatingDecimal.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="0" selection-start="4261" selection-end="4261" vertical-scroll-proportion="0.75242716" vertical-offset="1475" max-vertical-offset="1887">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Client/ExpEvalMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+        <state line="7" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/kavitama/ExpressionEvaluator/ExpEvalTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kavitama/ExpressionEvaluator/ExpEval.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="144" selection-end="144" vertical-scroll-proportion="0.28" vertical-offset="0" max-vertical-offset="425">
-          <folding />
+        <state line="9" column="5" selection-start="195" selection-end="195" vertical-scroll-proportion="0.23647605" vertical-offset="0" max-vertical-offset="647">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
