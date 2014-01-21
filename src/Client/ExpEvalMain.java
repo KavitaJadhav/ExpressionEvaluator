@@ -1,7 +1,10 @@
 package Client;
 
-public class ExpEvalMain {
+import kavitama.ExpressionEvaluator.ExpEval;
+
+public class ExpEvalMain extends ExpEval {
     public static void main(String[] args) {
-        System.out.println(args[0]);
+        ExpEval expeval = new ExpEval();
+        System.out.println(expeval.evaluateExpression(args[0]));
     }
 }

@@ -2,7 +2,8 @@
 package kavitama.ExpressionEvaluator;
 
 public class ExpEval {
-   public int something(){
-    return 1;
-   }
+    public  float add(float num1 ,float num2){
+        return num1 + num2;
+    }
+
 }
