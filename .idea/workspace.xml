@@ -93,28 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Build.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Build.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="13" selection-start="1923" selection-end="1923" vertical-scroll-proportion="0.0" vertical-offset="492" max-vertical-offset="1207">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jk_ExpEval.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jk_ExpEval.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="22" selection-start="22" selection-end="22" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.travis.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="23" selection-start="38" selection-end="38" vertical-scroll-proportion="0.02733119" vertical-offset="0" max-vertical-offset="622">
+            <state line="46" column="13" selection-start="1923" selection-end="1923" vertical-scroll-proportion="0.44822258" vertical-offset="492" max-vertical-offset="1207">
               <folding />
             </state>
           </provider>
@@ -140,6 +122,7 @@
         <option value="$PROJECT_DIR$/src/Client/ExpEvalMain.java" />
         <option value="$PROJECT_DIR$/jk_ExpEval.sh" />
         <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -646,9 +629,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Build.xml">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="13" selection-start="1923" selection-end="1923" vertical-scroll-proportion="0.0" vertical-offset="492" max-vertical-offset="1207">
+        <state line="3" column="13" selection-start="34" selection-end="34" vertical-scroll-proportion="0.07882535" vertical-offset="0" max-vertical-offset="647">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="23" selection-start="38" selection-end="38" vertical-scroll-proportion="0.02733119" vertical-offset="0" max-vertical-offset="622">
           <folding />
         </state>
       </provider>
@@ -660,9 +650,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
+    <entry file="file://$PROJECT_DIR$/Build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="23" selection-start="38" selection-end="38" vertical-scroll-proportion="0.02733119" vertical-offset="0" max-vertical-offset="622">
+        <state line="46" column="13" selection-start="1923" selection-end="1923" vertical-scroll-proportion="0.44822258" vertical-offset="492" max-vertical-offset="1207">
           <folding />
         </state>
       </provider>
