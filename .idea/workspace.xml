@@ -110,7 +110,7 @@
       <file leaf-file-name="build.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="10" selection-start="2503" selection-end="2503" vertical-scroll-proportion="0.72" vertical-offset="799" max-vertical-offset="1224">
+            <state line="66" column="0" selection-start="2504" selection-end="2504" vertical-scroll-proportion="0.76" vertical-offset="799" max-vertical-offset="1224">
               <folding />
             </state>
           </provider>
@@ -824,7 +824,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="10" selection-start="2503" selection-end="2503" vertical-scroll-proportion="0.72" vertical-offset="799" max-vertical-offset="1224">
+        <state line="66" column="0" selection-start="2504" selection-end="2504" vertical-scroll-proportion="0.76" vertical-offset="799" max-vertical-offset="1224">
           <folding />
         </state>
       </provider>
