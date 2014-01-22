@@ -70,7 +70,7 @@
       <file leaf-file-name="ExpEval.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kavitama/ExpressionEvaluator/ExpEval.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="13" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="935">
+            <state line="19" column="31" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1020">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,20 +78,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="200" selection-end="200" vertical-scroll-proportion="0.36" vertical-offset="0" max-vertical-offset="459">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExpEvalTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ExpEvalTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Test/kavitama/ExpressionEvaluator/ExpEvalTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="9" selection-start="3393" selection-end="3393" vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="2397">
-              <folding />
+            <state line="61" column="23" selection-start="1680" selection-end="1680" vertical-scroll-proportion="0.36" vertical-offset="884" max-vertical-offset="2414">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,7 +101,7 @@
       <file leaf-file-name="ExpEvalMain.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Client/ExpEvalMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="37" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+            <state line="7" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
               <folding />
             </state>
           </provider>
@@ -131,19 +124,18 @@
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Build.xml" />
-        <option value="$PROJECT_DIR$/src/Client/ExpEvalMain.java" />
         <option value="$PROJECT_DIR$/ExpEval/README.md" />
         <option value="$PROJECT_DIR$/build.xml" />
-        <option value="$PROJECT_DIR$/Test/kavitama/ExpressionEvaluator/ExpEvalTest.java" />
-        <option value="$PROJECT_DIR$/src/kavitama/ExpressionEvaluator/ExpEval.java" />
         <option value="$PROJECT_DIR$/jk_ExpEval.sh" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/Client/ExpEvalMain.java" />
+        <option value="$PROJECT_DIR$/Test/kavitama/ExpressionEvaluator/ExpEvalTest.java" />
+        <option value="$PROJECT_DIR$/src/kavitama/ExpressionEvaluator/ExpEval.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-9" />
     <option name="width" value="1296" />
     <option name="height" value="779" />
   </component>
@@ -288,7 +280,7 @@
       <recent name="D:\projects\ExpressionEvaluator\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExpEvalTest">
+  <component name="RunManager" selected="JUnit.ExpEvalTest.evaluateExpressionSubstractTwoNegativeIntNumber">
     <configuration default="false" name="ExpEvalTest.evaluateExpressionDivideTwoNegativeIntNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ExpressionEvaluator" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -296,28 +288,6 @@
       <option name="PACKAGE_NAME" value="kavitama.ExpressionEvaluator" />
       <option name="MAIN_CLASS_NAME" value="kavitama.ExpressionEvaluator.ExpEvalTest" />
       <option name="METHOD_NAME" value="evaluateExpressionDivideTwoNegativeIntNumber" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ExpEvalTest.evaluateExpressionDivideTwoIntNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ExpressionEvaluator" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="kavitama.ExpressionEvaluator" />
-      <option name="MAIN_CLASS_NAME" value="kavitama.ExpressionEvaluator.ExpEvalTest" />
-      <option name="METHOD_NAME" value="evaluateExpressionDivideTwoIntNumber" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -377,13 +347,35 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="ExpEvalTest.checkIsOperator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ExpEvalTest.evaluateExpressionDivideTwoIntNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ExpressionEvaluator" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="kavitama.ExpressionEvaluator" />
       <option name="MAIN_CLASS_NAME" value="kavitama.ExpressionEvaluator.ExpEvalTest" />
-      <option name="METHOD_NAME" value="checkIsOperator" />
+      <option name="METHOD_NAME" value="evaluateExpressionDivideTwoIntNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ExpEvalTest.evaluateExpressionSubstractTwoNegativeIntNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExpressionEvaluator" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="kavitama.ExpressionEvaluator" />
+      <option name="MAIN_CLASS_NAME" value="kavitama.ExpressionEvaluator.ExpEvalTest" />
+      <option name="METHOD_NAME" value="evaluateExpressionSubstractTwoNegativeIntNumber" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -528,18 +520,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.evaluateExpressionDivideTwoNegativeIntNumber" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.evaluateExpressionDivideTwoIntNumber" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ExpEvalTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.divideTwoIntNumber" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.checkIsOperator" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ExpEvalTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.divideTwoIntNumber" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.evaluateExpressionDivideTwoIntNumber" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.evaluateExpressionSubstractTwoNegativeIntNumber" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ExpEvalTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.checkIsOperator" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.divideTwoIntNumber" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.evaluateExpressionSubstractTwoNegativeIntNumber" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ExpEvalTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.evaluateExpressionDivideTwoNegativeIntNumber" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.evaluateExpressionDivideTwoIntNumber" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.evaluateExpressionDivideTwoNegativeIntNumber" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ExpEvalTest.divideTwoIntNumber" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -574,7 +566,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="779" extended-state="0" />
+    <frame x="-9" y="0" width="1296" height="779" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -594,7 +586,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32986626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32986626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32921174" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -661,7 +653,9 @@
     <entry file="file://$PROJECT_DIR$/Test/kavitama/ExpressionEvaluator/ExpEvalTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="136" column="0" selection-start="3726" selection-end="3726" vertical-scroll-proportion="0.0" vertical-offset="2312" max-vertical-offset="2414">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -684,7 +678,9 @@
     <entry file="file://$PROJECT_DIR$/Test/kavitama/ExpressionEvaluator/ExpEvalTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="5" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="289">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -791,29 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kavitama/ExpressionEvaluator/ExpEval.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="935">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Client/ExpEvalMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="37" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/kavitama/ExpressionEvaluator/ExpEvalTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="9" selection-start="3393" selection-end="3393" vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="2397">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jk_ExpEval.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
@@ -823,8 +796,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="200" selection-end="200" vertical-scroll-proportion="0.36" vertical-offset="0" max-vertical-offset="459">
+        <state line="10" column="3" selection-start="204" selection-end="204" vertical-scroll-proportion="0.4" vertical-offset="0" max-vertical-offset="459">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client/ExpEvalMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kavitama/ExpressionEvaluator/ExpEval.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="31" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1020">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/kavitama/ExpressionEvaluator/ExpEvalTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="23" selection-start="1680" selection-end="1680" vertical-scroll-proportion="0.36" vertical-offset="884" max-vertical-offset="2414">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -15,7 +15,12 @@ public class ExpEval {
         return num1 * num2;
     }
     public  float divide(float num1 ,float num2){
-        return num1 / num2;
+        if(num1 % num2 == 0) return num1 /num2;
+        String result ="";
+        result += num1 / num2 ;
+        result = result.substring(0 , result.indexOf(".")+3);
+        System.out.println(result);
+        return Float.parseFloat(result);
     }
     public double power(float num1, float num2){
         return Math.pow(num1 ,num2);
@@ -24,15 +29,15 @@ public class ExpEval {
         return (element.contains("+") || element.endsWith("-") || element.contains("*") || element.contains("/"));
     }
 
-    public int performOperation(List<String> operators , List<Float> operands){
+    public float performOperation(List<String> operators , List<Float> operands){
 
         if(operators.get(0).equals("-")) return (int)substract(operands.get(0) ,operands.get(1));
         else if(operators.get(0).equals("*")) return (int)multiply(operands.get(0), operands.get(1));
-        else if(operators.get(0).equals("/")) return (int)divide(operands.get(0), operands.get(1));
+        else if(operators.get(0).equals("/")) return divide(operands.get(0), operands.get(1));
         return (int)add(operands.get(0) ,operands.get(1));
     }
 
-    public int evaluateExpression(String expression){
+    public float evaluateExpression(String expression){
         String[] elements = expression.split(" ");
         List<Float> operands = new ArrayList();
         List<String> operators = new ArrayList();
