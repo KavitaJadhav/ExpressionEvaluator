@@ -7,7 +7,7 @@ public class ExpEvalMain extends ExpEval {
         ExpEval expeval = new ExpEval();
 
         if(args[0].contains("/"))
-             System.out.println(expeval.evaluateExpression(args[0]));
+             System.out.println((float)expeval.evaluateExpression(args[0]));
         else
             System.out.println((int)expeval.evaluateExpression(args[0]));
     }

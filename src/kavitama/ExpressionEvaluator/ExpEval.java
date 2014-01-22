@@ -15,11 +15,11 @@ public class ExpEval {
         return num1 * num2;
     }
     public  float divide(float num1 ,float num2){
-        if(num1 % num2 == 0) return num1 /num2;
-        String result ="";
-        result += num1 / num2 ;
-        result = result.substring(0 , result.indexOf(".")+3);
-        return Float.parseFloat(result);
+        float result = num1 / num2;
+        result = result * 100;
+        result = Math.round(result);
+        result = result / 100;
+        return  result;
     }
     public double power(float num1, float num2){
         return Math.pow(num1 ,num2);
