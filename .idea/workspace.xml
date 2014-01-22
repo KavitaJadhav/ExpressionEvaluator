@@ -64,52 +64,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ExpEval.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/kavitama/ExpressionEvaluator/ExpEval.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="27" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OperationsTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/kavitama/ExpressionEvaluator/OperationsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="9" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1037">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExpEvalTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Test/kavitama/ExpressionEvaluator/ExpEvalTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="5" selection-start="679" selection-end="679" vertical-scroll-proportion="0.76" vertical-offset="68" max-vertical-offset="2992">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExpEvalMain.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Client/ExpEvalMain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="41" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="918">
+            <state line="73" column="0" selection-start="1620" selection-end="1620" vertical-scroll-proportion="0.92" vertical-offset="850" max-vertical-offset="1343">
               <folding />
             </state>
           </provider>
@@ -118,7 +76,16 @@
       <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="29" selection-start="2132" selection-end="2132" vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="1224">
+            <state line="64" column="0" selection-start="2492" selection-end="2492" vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="1224">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExpEvalMain.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Client/ExpEvalMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="41" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
               <folding />
             </state>
           </provider>
@@ -143,12 +110,12 @@
         <option value="$PROJECT_DIR$/Build.xml" />
         <option value="$PROJECT_DIR$/ExpEval/README.md" />
         <option value="$PROJECT_DIR$/jk_ExpEval.sh" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/src/Client/ExpEvalMain.java" />
         <option value="$PROJECT_DIR$/src/kavitama/ExpressionEvaluator/ExpEval.java" />
         <option value="$PROJECT_DIR$/Test/kavitama/ExpressionEvaluator/OperationsTest.java" />
         <option value="$PROJECT_DIR$/Test/kavitama/ExpressionEvaluator/ExpEvalTest.java" />
+        <option value="$PROJECT_DIR$/build.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -605,7 +572,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32986626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32986626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32921174" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -806,27 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="918">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="29" selection-start="2132" selection-end="2132" vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="1224">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Client/ExpEvalMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="41" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/kavitama/ExpressionEvaluator/ExpEval.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="27" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
@@ -838,7 +784,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/kavitama/ExpressionEvaluator/OperationsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="9" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1037">
+        <state line="15" column="5" selection-start="397" selection-end="397" vertical-scroll-proportion="0.6" vertical-offset="0" max-vertical-offset="1037">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -847,10 +793,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/kavitama/ExpressionEvaluator/ExpEvalTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="5" selection-start="679" selection-end="679" vertical-scroll-proportion="0.76" vertical-offset="68" max-vertical-offset="2992">
+        <state line="25" column="24" selection-start="714" selection-end="714" vertical-scroll-proportion="0.84" vertical-offset="68" max-vertical-offset="2992">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="0" selection-start="2492" selection-end="2492" vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="1224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client/ExpEvalMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="41" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="0" selection-start="1620" selection-end="1620" vertical-scroll-proportion="0.92" vertical-offset="850" max-vertical-offset="1343">
+          <folding />
         </state>
       </provider>
     </entry>
