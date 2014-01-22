@@ -1,1 +1,1 @@
-java -cp $EVALUATOR/lib/ExpEval.jar Client.ExpEvalMain "$1"
+java -cp $EVALUATOR_HOME/lib/ExpEval.jar Client.ExpEvalMain "$1"

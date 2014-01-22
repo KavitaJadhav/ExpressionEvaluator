@@ -23,6 +23,15 @@ public class ExpEvalTest extends ExpEval {
         assertEquals(actual ,expected);
     }
     @Test
+    public void evaluateExpressionAddTwoNegativeIntNumber() throws Exception {
+        String expression = "-4 + -5";
+        int expected = -9;
+
+        int actual = evaluateExpression(expression);
+
+        assertEquals(actual ,expected);
+    }
+    @Test
     public void evaluateExpressionAddTwoIntNumber1() throws Exception {
         String expression = "40 + 50";
         int expected = 90;
@@ -31,16 +40,16 @@ public class ExpEvalTest extends ExpEval {
 
         assertEquals(actual ,expected);
     }
-
     @Test
     public void SubstractTwoIntNumber() throws Exception {
         float num1 = 10 ,num2 =20;
-        float expected = (float) 30.0;
+        float expected = (float) -10.0;
 
         float actual = substract(num1, num2);
 
         assertEquals(actual ,expected);
-    }@Test
+    }
+    @Test
     public void evaluateExpressionSubstractTwoIntNumber() throws Exception {
         String expression = "10 - 5";
         int expected = 5;
@@ -49,5 +58,79 @@ public class ExpEvalTest extends ExpEval {
 
         assertEquals(actual ,expected);
     }
+    @Test
+    public void evaluateExpressionSubstractTwoNegativeIntNumber() throws Exception {
+        String expression = "10 - -5";
+        int expected = 15;
 
+        int actual = evaluateExpression(expression);
+
+        assertEquals(actual ,expected);
+    }
+    @Test
+    public void MultiplyTwoIntNumber() throws Exception {
+        float num1 = 10 ,num2 =20;
+        float expected = (float) 200.0;
+
+        float actual = multiply(num1, num2);
+
+        assertEquals(actual ,expected);
+    }
+    @Test
+     public void evaluateExpressionMultiplyTwoIntNumber() throws Exception {
+        String expression = "10 * 5";
+        int expected = 50;
+
+        int actual = evaluateExpression(expression);
+
+        assertEquals(actual ,expected);
+    }
+    @Test
+    public void evaluateExpressionMultiplyTwoNegativeIntNumber() throws Exception {
+        String expression = "-10 * 5";
+        int expected = -50;
+
+        int actual = evaluateExpression(expression);
+
+        assertEquals(actual ,expected);
+    }
+    @Test
+    public void divideTwoIntNumber() throws Exception {
+        float num1 = 20 ,num2 =10;
+        float expected = (float) 2.0;
+
+        float actual = divide(num1, num2);
+
+        assertEquals(actual ,expected);
+    }
+    @Test
+     public void evaluateExpressionDivideTwoIntNumber() throws Exception {
+        String expression = "22 / 7";
+        int expected = 3;
+
+        int actual = evaluateExpression(expression);
+
+        assertEquals(actual ,expected);
+    }
+
+    @Test
+    public void evaluateExpressionDivideTwoNegativeIntNumber() throws Exception {
+        String expression = "-10 / 5";
+        int expected = -2;
+
+        int actual = evaluateExpression(expression);
+
+        assertEquals(actual ,expected);
+    }
+    @Test
+    public void checkIsOperator() throws Exception {
+        String expression = "10 / 5";
+        String[] operators = {"+" ,"-" ,"*" ,"/"};
+        boolean expected = true;
+
+        for (String operator : operators) {
+            boolean actual = isOperator(operator);
+            assertEquals(actual ,expected);
+        }
+    }
 }
