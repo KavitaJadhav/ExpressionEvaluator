@@ -29,7 +29,6 @@ public class ExpEval {
     }
 
     public double performOperation(List<String> operators , List<Float> operands){
-
         if(operators.get(0).equals("-")) return (int)substract(operands.get(0) ,operands.get(1));
         else if(operators.get(0).equals("*")) return (int)multiply(operands.get(0), operands.get(1));
         else if(operators.get(0).equals("/")) return divide(operands.get(0), operands.get(1));
@@ -44,9 +43,8 @@ public class ExpEval {
 
         for (int i = 0; i <elements.length; i++) {
             if(isOperator(elements[i])) operators.add(elements[i]);
-            else {
+            else
                 operands.add(Float.parseFloat(elements[i])) ;
-            }
         }
 
         return performOperation(operators ,operands);
