@@ -19,25 +19,25 @@ public class ExpEval {
         String result ="";
         result += num1 / num2 ;
         result = result.substring(0 , result.indexOf(".")+3);
-        System.out.println(result);
         return Float.parseFloat(result);
     }
     public double power(float num1, float num2){
         return Math.pow(num1 ,num2);
     }
     public boolean isOperator(String element){
-        return (element.contains("+") || element.endsWith("-") || element.contains("*") || element.contains("/"));
+        return (element.contains("+") || element.endsWith("-") || element.contains("*") || element.contains("/")|| element.contains("^"));
     }
 
-    public float performOperation(List<String> operators , List<Float> operands){
+    public double performOperation(List<String> operators , List<Float> operands){
 
         if(operators.get(0).equals("-")) return (int)substract(operands.get(0) ,operands.get(1));
         else if(operators.get(0).equals("*")) return (int)multiply(operands.get(0), operands.get(1));
         else if(operators.get(0).equals("/")) return divide(operands.get(0), operands.get(1));
+        else if(operators.get(0).equals("^")) return power(operands.get(0), operands.get(1));
         return (int)add(operands.get(0) ,operands.get(1));
     }
 
-    public float evaluateExpression(String expression){
+    public double evaluateExpression(String expression){
         String[] elements = expression.split(" ");
         List<Float> operands = new ArrayList();
         List<String> operators = new ArrayList();

@@ -18,7 +18,7 @@ public class ExpEvalTest extends ExpEval {
         String expression = "4 + 5";
         float expected = 9;
 
-        float actual = evaluateExpression(expression);
+        float actual = (float)evaluateExpression(expression);
 
         assertEquals(actual ,expected);
     }
@@ -27,7 +27,7 @@ public class ExpEvalTest extends ExpEval {
         String expression = "-4 + -5";
         float expected = -9;
 
-        float actual = evaluateExpression(expression);
+        float actual = (float)evaluateExpression(expression);
 
         assertEquals(actual ,expected);
     }
@@ -36,7 +36,7 @@ public class ExpEvalTest extends ExpEval {
         String expression = "40 + 50";
         float expected = 90;
 
-        float actual = evaluateExpression(expression);
+        float actual = (float)evaluateExpression(expression);
 
         assertEquals(actual ,expected);
     }
@@ -54,7 +54,7 @@ public class ExpEvalTest extends ExpEval {
         String expression = "10 - 5";
         float expected = 5;
 
-        float actual = evaluateExpression(expression);
+        float actual = (float)evaluateExpression(expression);
 
         assertEquals(actual ,expected);
     }
@@ -63,7 +63,7 @@ public class ExpEvalTest extends ExpEval {
         String expression = "10 - -5";
         float expected = 15;
 
-        float actual = evaluateExpression(expression);
+        float actual = (float)evaluateExpression(expression);
 
         assertEquals(actual ,expected);
     }
@@ -81,7 +81,7 @@ public class ExpEvalTest extends ExpEval {
         String expression = "10 * 5";
         float expected = 50;
 
-        float actual = evaluateExpression(expression);
+        float actual = (float)evaluateExpression(expression);
 
         assertEquals(actual ,expected);
     }
@@ -90,7 +90,7 @@ public class ExpEvalTest extends ExpEval {
         String expression = "-10 * 5";
         float expected = -50;
 
-        float actual = evaluateExpression(expression);
+        float actual = (float)evaluateExpression(expression);
 
         assertEquals(actual ,expected);
     }
@@ -108,17 +108,36 @@ public class ExpEvalTest extends ExpEval {
         String expression = "22 / 7";
         float expected = 3.14f;
 
-        float actual = evaluateExpression(expression);
+        float actual = (float)evaluateExpression(expression);
+
+        assertEquals(actual ,expected);
+    }
+    @Test
+    public void getPowerOfIntNumber() throws Exception {
+        float num1 = 2 ,num2 =32;
+        long expected = 4294967296l ;
+
+        long actual = (long)power(num1, num2);
+
+        assertEquals(expected , actual);
+    }
+
+    @Test
+    public void evaluateExpressionTogetPowerOfIntNumber() throws Exception {
+        String expression = "10 ^ 5";
+        double expected = 100000;
+
+        double actual = evaluateExpression(expression);
 
         assertEquals(actual ,expected);
     }
 
     @Test
-    public void evaluateExpressionDivideTwoNegativeIntNumber() throws Exception {
-        String expression = "-10 / 5";
-        float expected = -2;
+    public void evaluateExpressionTogetPowerOfIntNumber1() throws Exception {
+        String expression = "2 ^ 32";
+        long expected = 4294967296l ;
 
-        float actual = evaluateExpression(expression);
+        long actual =(long) evaluateExpression(expression);
 
         assertEquals(actual ,expected);
     }
@@ -132,5 +151,15 @@ public class ExpEvalTest extends ExpEval {
             boolean actual = isOperator(operator);
             assertEquals(actual ,expected);
         }
+    }
+
+    @Test
+    public void evaluateExpressionDivideTwoNegativeIntNumber() throws Exception {
+        String expression = "-10 / 5";
+        float expected = -2;
+
+        float actual = (float)evaluateExpression(expression);
+
+        assertEquals(actual ,expected);
     }
 }
