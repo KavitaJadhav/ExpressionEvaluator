@@ -62,7 +62,6 @@ public class ExpEval extends Operations {
         String subExp = expression.substring(expression.indexOf("(") , expression.indexOf(")")+1);
         String result = "";
         result+= evaluateExpression(subExp.substring(1 ,subExp.length()-1));
-
         return expression.replace(subExp, result);
     }
 

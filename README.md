@@ -12,9 +12,19 @@ Use shell file to run evaluator.
 
 ReleaseNotes :
 --------------
+
 Space is mandatory between operator and operand;
 
-Brackets are not allowed .
+Brackets are not allowed (for versions 0,1 to 0,4).
+
+Release 0.4
+--------------
+Expression with only one bracket allowed.
+
+`Example - jk_ExpEval.sh "operand1  + operand2 * operand3 / operand4 ^ operand 5" `
+
+`Example - jk_ExpEval.sh "10 - -5.0 * 2.0 / 10"        output : 3.0`
+
 
 
 Release 0.4
