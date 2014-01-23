@@ -185,4 +185,41 @@ public class ExpEvalTest extends ExpEval {
 
         assertEquals(expected , actual);
     }
+    @Test
+    public void testHandleBrackets() throws Exception {
+        String expression = "10 - (5 * 2) + 5";
+        String expected = "10 - 10.0 + 5";
+
+        String  actual = handleBrackets(expression);
+
+        assertEquals(expected , actual);
+    }
+    @Test
+    public void HandleSimpleBracketWithIntOperands() throws Exception {
+        String expression = "10 - (5 * 2) + 5";
+        float expected = 5;
+
+        float actual = (float)evaluateExpression(expression);
+
+        assertEquals(expected , actual);
+    }
+    @Test
+    public void HandleSimpleBracketWithFloatBrackets() throws Exception {
+        String expression = "10.5 - (5 * 2.5) + 5";
+        float expected = 3;
+
+        float actual = (float)evaluateExpression(expression);
+
+        assertEquals(expected , actual);
+    }
+
+//    @Test
+//    public void HandleSimpleBracketWithIntOperands1() throws Exception {
+//        String expression = "10 - (5 * 2) + 5 + (4 * 2)";
+//        float expected = 13;
+//
+//        float actual = (float)evaluateExpression(expression);
+//
+//        assertEquals(expected , actual);
+//    }
 }
