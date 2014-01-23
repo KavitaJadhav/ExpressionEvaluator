@@ -1,40 +1,38 @@
-<project name = "ExpEval">
+
+<project name = "ExpEval" default="createZip">
     <target name="clean">
-        <delete dir = "ExpEval"></delete>
-        <delete dir = "ExpEval/lib"></delete>
-        <delete dir = "ExpEval/built"></delete>
-        <delete dir = "ExpEval/build/classes"></delete>
-        <delete dir = "ExpEval/build/TestClasses"></delete>
+        <delete dir = "build"></delete>
     </target>
 
-    <target name = "createDir" >
-        <mkdir dir = "ExpEval"></mkdir>
-        <mkdir dir = "ExpEval/bin"></mkdir>
-        <mkdir dir="ExpEval/lib"></mkdir>
-        <mkdir dir = "ExpEval/External-Libraries"></mkdir>
+    <target name = "createDir" depends="clean">
+        <mkdir dir = "build"></mkdir>
+        <mkdir dir = "build/src"></mkdir>
+        <mkdir dir = "build/test"></mkdir>
+        <mkdir dir = "build/dist/bin"></mkdir>
+        <mkdir dir = "build/dist/lib"></mkdir>
+
     </target>
 
     <target name = "compile" depends ="createDir">
-        <mkdir dir = "ExpEval/build/classes"></mkdir>
-        <javac srcdir = "src" destdir = "ExpEval/build/classes"></javac>
+        <mkdir dir = "build/src"></mkdir>
+        <javac srcdir = "src" destdir = "build/src"></javac>
     </target>
 
     <target name = "compileTest" depends = "compile">
-        <copy file = "ExternalLibraries/junit-4.10.jar" todir = "ExpEval/External-Libraries"></copy>
-        <mkdir dir = "ExpEval/build/TestClasses"></mkdir>
-        <javac srcdir = "Test" destdir = "ExpEval/build/TestClasses"
-               classpath = "ExpEval/build/classes;ExpEval/External-Libraries/junit-4.10.jar"></javac>
+        <mkdir dir = "build/test"></mkdir>
+        <javac srcdir = "Test" destdir = "build/test"
+               classpath = "build/src;ExternalLibraries/junit-4.10.jar"></javac>
     </target>
 
     <target name="runTest" depends="compileTest">
         <junit haltonfailure="yes">
             <classpath>
-                <pathelement location="ExpEval/build/classes" />
-                <pathelement location="ExpEval/build/TestClasses" />
-                <pathelement location="ExpEval/External-Libraries/junit-4.10.jar"/>
+                <pathelement location="build/src" />
+                <pathelement location="build/test" />
+                <pathelement location="ExternalLibraries/junit-4.10.jar"/>
             </classpath>
             <batchtest>
-                <fileset dir="ExpEval/build/TestClasses">
+                <fileset dir="build/test">
                     <include name="**/*Test*" />
                 </fileset>
             </batchtest>
@@ -43,24 +41,87 @@
     </target>
 
     <target name="createJar" depends="runTest">
-        <jar destfile = "ExpEval/lib/ExpEval.jar" basedir = "ExpEval/build/classes"></jar>
+        <jar destfile = "build/dist/lib/ExpEval.jar" basedir = "build/src"></jar>
     </target>
 
-    <target name="deleteClasses" depends="createJar">
-        <delete dir = "ExpEval/build"></delete>
-        <delete dir = "ExpEval/External-Libraries"></delete>
-    </target>
-
-    <target name="copyShells" depends="deleteClasses">
-        <copy file = "jk_ExpEval.sh" todir="ExpEval/bin" />
+    <target name="copyShells" depends="createJar">
+        <copy file = "jk_ExpEval.sh" todir="build/dist/bin" />
     </target>
 
     <target name="copyReadMe" depends="copyShells">
-        <copy file = "README.md" todir = "ExpEval"></copy>
+        <copy file = "README.md" todir = "build/dist"></copy>
     </target>
 
     <target name="createZip" depends="copyReadMe">
-        <zip zipFile = "ExpEval-0.7.zip" basedir = "ExpEval"></zip>
+        <zip zipFile = "build/ExpEval-0.7.zip" basedir = "build/dist"></zip>
     </target>
-
 </project>
+
+
+
+<!--<project name = "ExpEval">-->
+    <!--<target name="clean">-->
+        <!--<delete dir = "ExpEval"></delete>-->
+        <!--<delete dir = "ExpEval/lib"></delete>-->
+        <!--<delete dir = "ExpEval/built"></delete>-->
+        <!--<delete dir = "ExpEval/build/classes"></delete>-->
+        <!--<delete dir = "ExpEval/build/TestClasses"></delete>-->
+    <!--</target>-->
+
+    <!--<target name = "createDir" >-->
+        <!--<mkdir dir = "ExpEval"></mkdir>-->
+        <!--<mkdir dir = "ExpEval/bin"></mkdir>-->
+        <!--<mkdir dir="ExpEval/lib"></mkdir>-->
+        <!--<mkdir dir = "ExpEval/External-Libraries"></mkdir>-->
+    <!--</target>-->
+
+    <!--<target name = "compile" depends ="createDir">-->
+        <!--<mkdir dir = "ExpEval/build/classes"></mkdir>-->
+        <!--<javac srcdir = "src" destdir = "ExpEval/build/classes"></javac>-->
+    <!--</target>-->
+
+    <!--<target name = "compileTest" depends = "compile">-->
+        <!--<copy file = "ExternalLibraries/junit-4.10.jar" todir = "ExpEval/External-Libraries"></copy>-->
+        <!--<mkdir dir = "ExpEval/build/TestClasses"></mkdir>-->
+        <!--<javac srcdir = "Test" destdir = "ExpEval/build/TestClasses"-->
+               <!--classpath = "ExpEval/build/classes;ExpEval/External-Libraries/junit-4.10.jar"></javac>-->
+    <!--</target>-->
+
+    <!--<target name="runTest" depends="compileTest">-->
+        <!--<junit haltonfailure="yes">-->
+            <!--<classpath>-->
+                <!--<pathelement location="ExpEval/build/classes" />-->
+                <!--<pathelement location="ExpEval/build/TestClasses" />-->
+                <!--<pathelement location="ExpEval/External-Libraries/junit-4.10.jar"/>-->
+            <!--</classpath>-->
+            <!--<batchtest>-->
+                <!--<fileset dir="ExpEval/build/TestClasses">-->
+                    <!--<include name="**/*Test*" />-->
+                <!--</fileset>-->
+            <!--</batchtest>-->
+            <!--<formatter type = "brief" usefile = "false"/>-->
+        <!--</junit>-->
+    <!--</target>-->
+
+    <!--<target name="createJar" depends="runTest">-->
+        <!--<jar destfile = "ExpEval/lib/ExpEval.jar" basedir = "ExpEval/build/classes"></jar>-->
+    <!--</target>-->
+
+    <!--<target name="deleteClasses" depends="createJar">-->
+        <!--<delete dir = "ExpEval/build"></delete>-->
+        <!--<delete dir = "ExpEval/External-Libraries"></delete>-->
+    <!--</target>-->
+
+    <!--<target name="copyShells" depends="deleteClasses">-->
+        <!--<copy file = "jk_ExpEval.sh" todir="ExpEval/bin" />-->
+    <!--</target>-->
+
+    <!--<target name="copyReadMe" depends="copyShells">-->
+        <!--<copy file = "README.md" todir = "ExpEval"></copy>-->
+    <!--</target>-->
+
+    <!--<target name="createZip" depends="copyReadMe">-->
+        <!--<zip zipFile = "ExpEval-0.7.zip" basedir = "ExpEval"></zip>-->
+    <!--</target>-->
+
+<!--</project>-->
