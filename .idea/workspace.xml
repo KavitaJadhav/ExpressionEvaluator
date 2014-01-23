@@ -84,19 +84,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExpEval.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ExpEval.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/kavitama/ExpressionEvaluator/ExpEval.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="0" selection-start="2298" selection-end="2298" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1513">
+            <state line="65" column="0" selection-start="2298" selection-end="2298" vertical-scroll-proportion="0.9352751" vertical-offset="510" max-vertical-offset="1513">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="12" selection-start="419" selection-end="419" vertical-scroll-proportion="0.29867986" vertical-offset="210" max-vertical-offset="1360">
+            <state line="23" column="12" selection-start="419" selection-end="419" vertical-scroll-proportion="-7.24" vertical-offset="210" max-vertical-offset="1360">
               <folding />
             </state>
           </provider>
@@ -792,6 +792,20 @@
         <state line="636" column="0" selection-start="23281" selection-end="23281" vertical-scroll-proportion="0.4117647" vertical-offset="10246" max-vertical-offset="19635" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="0" selection-start="2504" selection-end="2504" vertical-scroll-proportion="0.0" vertical-offset="577" max-vertical-offset="1224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="12" selection-start="419" selection-end="419" vertical-scroll-proportion="-7.24" vertical-offset="210" max-vertical-offset="1360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Test/kavitama/ExpressionEvaluator/ExpEvalTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="209" column="0" selection-start="6266" selection-end="6266" vertical-scroll-proportion="0.0" vertical-offset="3296" max-vertical-offset="3927">
@@ -801,23 +815,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="0" selection-start="2504" selection-end="2504" vertical-scroll-proportion="0.0" vertical-offset="577" max-vertical-offset="1224">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/kavitama/ExpressionEvaluator/ExpEval.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="0" selection-start="2298" selection-end="2298" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1513">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="12" selection-start="419" selection-end="419" vertical-scroll-proportion="0.29867986" vertical-offset="210" max-vertical-offset="1360">
+        <state line="65" column="0" selection-start="2298" selection-end="2298" vertical-scroll-proportion="0.9352751" vertical-offset="510" max-vertical-offset="1513">
           <folding />
         </state>
       </provider>
