@@ -96,7 +96,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="336" selection-end="336" vertical-scroll-proportion="0.4768977" vertical-offset="17" max-vertical-offset="1343">
+            <state line="23" column="12" selection-start="419" selection-end="419" vertical-scroll-proportion="0.29867986" vertical-offset="210" max-vertical-offset="1360">
               <folding />
             </state>
           </provider>
@@ -123,10 +123,10 @@
         <option value="$PROJECT_DIR$/src/Client/ExpEvalMain.java" />
         <option value="$PROJECT_DIR$/Test/kavitama/ExpressionEvaluator/OperationsTest.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Test/kavitama/ExpressionEvaluator/ExpEvalTest.java" />
         <option value="$PROJECT_DIR$/src/kavitama/ExpressionEvaluator/ExpEval.java" />
         <option value="$PROJECT_DIR$/build.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -817,7 +817,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="336" selection-end="336" vertical-scroll-proportion="0.4768977" vertical-offset="17" max-vertical-offset="1343">
+        <state line="23" column="12" selection-start="419" selection-end="419" vertical-scroll-proportion="0.29867986" vertical-offset="210" max-vertical-offset="1360">
           <folding />
         </state>
       </provider>
