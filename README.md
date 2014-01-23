@@ -21,7 +21,7 @@ Release 0.4
 --------------
 Multiple operands and operator allowed.
 
-It supports (+ , - * / ^) for positive / negative float numbers.
+It supports (+ , - ,* , / , ^) for positive / negative float numbers.
 
 `Example - jk_ExpEval.sh "operand1  + operand2 * operand3 / operand4 ^ operand 5" `
 
