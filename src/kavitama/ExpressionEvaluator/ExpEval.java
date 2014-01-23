@@ -29,19 +29,35 @@ class Operations{
     }
 }
 public class ExpEval extends Operations {
+
     public boolean isOperator(String element){
         return (element.contains("+") || element.endsWith("-") || element.contains("*") || element.contains("/")|| element.contains("^"));
     }
+    public float performOperation(List<String> operators , List<Float> operands){
+        float result = operands.get(0);
+        int i=1;
+        for (String operator : operators) {
 
-    public double performOperation(List<String> operators , List<Float> operands){
-
-        if(operators.get(0).equals("-")) return substract(operands.get(0) ,operands.get(1));
-        else if(operators.get(0).equals("*")) return multiply(operands.get(0), operands.get(1));
-        else if(operators.get(0).equals("/")) return divide(operands.get(0), operands.get(1));
-        else if(operators.get(0).equals("^")) return power(operands.get(0), operands.get(1));
-        return add(operands.get(0) ,operands.get(1));
+            switch (operator.charAt(0)){
+                case '+':
+                    result = add(result ,operands.get(i++));
+                    break;
+                case '-':
+                    result = substract(result ,operands.get(i++));
+                    break;
+                case '*':
+                    result = multiply(result, operands.get(i++));
+                    break;
+                case '/':
+                    result = divide(result, operands.get(i++));
+                    break;
+                case '^':
+                    result = (float)power(result, operands.get(i++));
+                    break;
+            }
+        }
+        return result;
     }
-
     public double evaluateExpression(String expression){
         String[] elements = expression.split(" ");
         List<Float> operands = new ArrayList();
@@ -52,6 +68,7 @@ public class ExpEval extends Operations {
             else
                 operands.add(Float.parseFloat(elements[i])) ;
         }
+
         return performOperation(operators ,operands);
     }
 }
