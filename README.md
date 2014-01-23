@@ -18,6 +18,16 @@ Space is mandatory between operator and operand;
 Brackets are not allowed (for versions 0,1 to 0,4).
 
 
+Release 0.7
+--------------
+working with nested brackets.
+
+Space is not allowed between bracket and operand.
+
+`Example - jk_ExpEval.sh "operand1  + ((operand2 * operand3) / (operand4 ^ operand 5))" `
+
+`Example - jk_ExpEval.sh "1 +((2.5 * 3) / (10 ^ -2))"        output : 850.0`
+
 Release 0.6
 --------------
 Expression with one or more number of brackets allowed.
