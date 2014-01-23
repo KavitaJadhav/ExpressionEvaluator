@@ -51,5 +51,4 @@ public class OperationsTest extends Operations {
 
         assertEquals(expected , actual);
     }
-
 }
