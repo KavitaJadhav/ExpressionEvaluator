@@ -10,15 +10,28 @@ Set the environment variable with the name of 'EVALUATOR_HOME'.
 
 Use shell file to run evaluator.
 
+ReleaseNotes :
+--------------
+Space is mandatory between operator and operand;
+
+Brackets are not allowed .
+
+
+Release 0.4
+--------------
+Multiple operands and operator allowed.
+
+It supports (+ , - * / ^) for positive / negative float numbers.
+
+`Example - jk_ExpEval.sh "operand1  + operand2 * operand3 / operand4 ^ operand 5" `
+
+`Example - jk_ExpEval.sh "10 - -5.0 * 2.0 / 10"        output : 3.0`
+
 Release 0.3
 --------------
 Bugs of Negative Exponent handled.
 
 It supports (+ , - * / ^) for positive / negative float numbers.
-
-Space is mandatory between operator and operand;
-
-Brackets are not allowed .
 
 `Example - jk_ExpEval.sh "operand1  + operand2" `
 
@@ -29,10 +42,6 @@ Release 0.2
 --------------
 
 It supports (+ , - * / ^) for positive / negative float numbers.
-
-Space is mandatory between operator and operand;
-
-Brackets are not allowed .
 
 Exponent should be positive;
 
@@ -47,10 +56,6 @@ Release 0.1
 --------------
 
 It will add two positive integer numbers ;
-
-Space is mandatory between operator and operand;
-
-Brackets are not allowed .
 
 `Example - jk_ExpEval.sh "4 + 5" `
 

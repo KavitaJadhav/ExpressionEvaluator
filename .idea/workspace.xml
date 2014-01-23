@@ -64,10 +64,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ExpEval.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ExpEval.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kavitama/ExpressionEvaluator/ExpEval.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.5776699" vertical-offset="425" max-vertical-offset="1343">
+            <state line="29" column="1" selection-start="883" selection-end="883" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1343">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,10 +75,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="14" selection-start="627" selection-end="627" vertical-scroll-proportion="0.745" vertical-offset="212" max-vertical-offset="1173">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ExpEvalTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test/kavitama/ExpressionEvaluator/ExpEvalTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="169" column="9" selection-start="5027" selection-end="5027" vertical-scroll-proportion="0.0" vertical-offset="2651" max-vertical-offset="3298">
+            <state line="171" column="31" selection-start="5134" selection-end="5134" vertical-scroll-proportion="0.0" vertical-offset="2651" max-vertical-offset="3298">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,9 +117,9 @@
         <option value="$PROJECT_DIR$/Test/kavitama/ExpressionEvaluator/OperationsTest.java" />
         <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Test/kavitama/ExpressionEvaluator/ExpEvalTest.java" />
         <option value="$PROJECT_DIR$/src/kavitama/ExpressionEvaluator/ExpEval.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -551,7 +560,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="0" width="1296" height="779" extended-state="1" />
+    <frame x="-9" y="0" width="1296" height="779" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -799,28 +808,28 @@
         <state line="2" column="5" selection-start="20" selection-end="20" vertical-scroll-proportion="0.08" vertical-offset="0" max-vertical-offset="425" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/src/kavitama/ExpressionEvaluator/ExpEval.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="908" selection-end="908" vertical-scroll-proportion="0.32" vertical-offset="595" max-vertical-offset="1088">
-          <folding />
+        <state line="29" column="1" selection-start="883" selection-end="883" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1343">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/kavitama/ExpressionEvaluator/ExpEvalTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="9" selection-start="5027" selection-end="5027" vertical-scroll-proportion="0.0" vertical-offset="2651" max-vertical-offset="3298">
+        <state line="171" column="31" selection-start="5134" selection-end="5134" vertical-scroll-proportion="0.0" vertical-offset="2651" max-vertical-offset="3298">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kavitama/ExpressionEvaluator/ExpEval.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.5776699" vertical-offset="425" max-vertical-offset="1343">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="30" column="14" selection-start="627" selection-end="627" vertical-scroll-proportion="0.745" vertical-offset="212" max-vertical-offset="1173">
+          <folding />
         </state>
       </provider>
     </entry>
