@@ -37,7 +37,6 @@ public class ExpEval extends Operations {
         float result = operands.get(0);
         int i=1;
         for (String operator : operators) {
-
             switch (operator.charAt(0)){
                 case '+':
                     result = add(result ,operands.get(i++));
