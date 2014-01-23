@@ -59,7 +59,15 @@ public class ExpEval extends Operations {
     }
 
     public String handleBrackets(String expression){
-        String subExp = expression.substring(expression.indexOf("(") , expression.indexOf(")")+1);
+        int startIndex = 0 ,endIndex = 0;
+        for (int i = 0; i < expression.length() ; i++) {
+            if(expression.charAt(i) == '(') startIndex = i;
+            if(expression.charAt(i) == ')') {
+                endIndex = i;
+                break;
+            }
+        }
+        String subExp = expression.substring(startIndex , endIndex+1);
         String result = "";
         result+= evaluateExpression(subExp.substring(1 ,subExp.length()-1));
         return expression.replace(subExp, result);
