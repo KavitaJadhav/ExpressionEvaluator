@@ -69,7 +69,7 @@ public class ExpEval extends Operations {
         List<Float> operands = new ArrayList();
         List<String> operators = new ArrayList();
 
-        if(expression.contains("(")) expression = handleBrackets(expression);
+        while (expression.contains("("))    expression = handleBrackets(expression);
 
         String[] elements = expression.split(" ");
 

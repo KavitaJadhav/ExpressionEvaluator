@@ -213,13 +213,14 @@ public class ExpEvalTest extends ExpEval {
         assertEquals(expected , actual);
     }
 
-//    @Test
-//    public void HandleSimpleBracketWithIntOperands1() throws Exception {
-//        String expression = "10 - (5 * 2) + 5 + (4 * 2)";
-//        float expected = 13;
-//
-//        float actual = (float)evaluateExpression(expression);
-//
-//        assertEquals(expected , actual);
-//    }
+    @Test
+    public void HandleSimpleBracketWithIntOperands1() throws Exception {
+        String expression = "10 - (5 * 2) + 5 + (4 * 2) - (2.5 * 1.5)";
+        float expected = 9.25f;
+
+        float actual = (float)evaluateExpression(expression);
+
+        assertEquals(expected , actual);
+    }
 }
+
