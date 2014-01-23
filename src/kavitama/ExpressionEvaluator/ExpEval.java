@@ -29,7 +29,9 @@ class Operations{
     }
 }
 public class ExpEval extends Operations {
-
+    public boolean isOperatorchar(char element){
+        return (element == '+' || element == '-' || element == '*' || element == '/' || element == '^');
+    }
     public boolean isOperator(String element){
         return (element.contains("+") || element.endsWith("-") || element.contains("*") || element.contains("/")|| element.contains("^"));
     }
@@ -79,14 +81,12 @@ public class ExpEval extends Operations {
 
         while (expression.contains("("))    expression = handleBrackets(expression);
 
-        String[] elements = expression.split(" ");
-
-        for (int i = 0; i <elements.length; i++) {
-            if(isOperator(elements[i])) operators.add(elements[i]);
-            else
-                operands.add(Float.parseFloat(elements[i])) ;
-        }
-
+            String[] elements = expression.split(" ");
+            for (int i = 0; i <elements.length; i++) {
+                if(isOperator(elements[i])) operators.add(elements[i]);
+                else
+                    operands.add(Float.parseFloat(elements[i])) ;
+            }
         return performOperation(operators ,operands);
     }
 }

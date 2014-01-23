@@ -26,7 +26,7 @@ Space is not allowed between bracket and operand.
 
 `Example - jk_ExpEval.sh "operand1  + ((operand2 * operand3) / (operand4 ^ operand 5))" `
 
-`Example - jk_ExpEval.sh "1 +((2.5 * 3) / (10 ^ -2))"        output : 850.0`
+`Example - jk_ExpEval.sh "1 +((2.5 * 3) / (10 ^ -2))"        output : 751.0`
 
 Release 0.6
 --------------

@@ -234,10 +234,19 @@ public class ExpEvalTest extends ExpEval {
     public void HandleNestedBracketWithFloatOperands() throws Exception {
         String expression = "10.5 + ((5 * 2) + 0.5) ^ 2";
         float expected = 441;
-
         float actual = (float)evaluateExpression(expression);
 
         assertEquals(expected , actual);
     }
+
+//    @Test
+//    public void Expressionwithoutspace() throws Exception {
+//        String expression = "10-5*2+5";
+//        float expected = 15;
+//
+//        float actual = (float)evaluateExpression(expression);
+//
+//        assertEquals(expected , actual);
+//    }
 }
 
