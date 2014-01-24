@@ -239,14 +239,50 @@ public class ExpEvalTest extends ExpEval {
         assertEquals(expected , actual);
     }
 
-//    @Test
-//    public void Expressionwithoutspace() throws Exception {
-//        String expression = "10-5*2+5";
-//        float expected = 15;
-//
-//        float actual = (float)evaluateExpression(expression);
-//
-//        assertEquals(expected , actual);
-//    }
+    @Test
+    public void Expressionwithoutspace() throws Exception {
+        String expression = "10-5*2+5";
+        float expected = 15;
+
+        float actual = (float)evaluateExpression(expression);
+
+        assertEquals(expected , actual);
+    }
+    @Test
+    public void ExpressionwithoutspaceNegativeNumbers() throws Exception {
+        String expression = "10--5*2+5";
+        float expected = 35;
+
+        float actual = (float)evaluateExpression(expression);
+
+        assertEquals(expected , actual);
+    }
+    @Test
+    public void Expressionwithoutspacebrackets() throws Exception {
+        String expression = "10-(5*2)+5";
+        float expected = 5;
+
+        float actual = (float)evaluateExpression(expression);
+
+        assertEquals(expected , actual);
+    }
+    @Test
+    public void ExpressionwithoutspaceBracketwithNegative() throws Exception {
+        String expression = "10-(-5.0*2.5)+5";
+        float expected = 27.5f;
+
+        float actual = (float)evaluateExpression(expression);
+
+        assertEquals(expected , actual);
+    }
+    @Test
+    public void ExpressionwithoutspaceNestedBracket() throws Exception {
+        String expression = "(10*(-5-2))+5";
+        float expected = -65;
+
+        float actual = (float)evaluateExpression(expression);
+
+        assertEquals(expected , actual);
+    }
 }
 

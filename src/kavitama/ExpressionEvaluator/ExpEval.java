@@ -29,17 +29,14 @@ class Operations{
     }
 }
 public class ExpEval extends Operations {
-    public boolean isOperatorchar(char element){
-        return (element == '+' || element == '-' || element == '*' || element == '/' || element == '^');
-    }
     public boolean isOperator(String element){
         return (element.contains("+") || element.endsWith("-") || element.contains("*") || element.contains("/")|| element.contains("^"));
     }
-    public float performOperation(List<String> operators , List<Float> operands){
+    public float performOperation(List<Character> operators , List<Float> operands){
         float result = operands.get(0);
         int i=1;
-        for (String operator : operators) {
-            switch (operator.charAt(0)){
+        for (Character operator : operators) {
+            switch (operator){
                 case '+':
                     result = add(result ,operands.get(i++));
                     break;
@@ -74,16 +71,28 @@ public class ExpEval extends Operations {
         result+= evaluateExpression(subExp.substring(1 ,subExp.length()-1));
         return expression.replace(subExp, result);
     }
-
+    public String replaceWithSpace(String expression){
+        return expression.trim()
+            .replaceAll("\\+"," + ")
+            .replaceAll("\\-"," - ")
+            .replaceAll("\\*"," * ")
+            .replaceAll("\\/"," / ")
+            .replaceAll("\\^"," ^ ")
+            .replaceAll("  - "," -")
+            .replaceAll("^ - ", "-")
+            .replaceAll(" +"," ")
+            .replaceAll("\\( - ","(-");
+    }
     public double evaluateExpression(String expression){
         List<Float> operands = new ArrayList();
-        List<String> operators = new ArrayList();
+        List<Character> operators = new ArrayList();
 
+        expression = replaceWithSpace(expression);
         while (expression.contains("("))    expression = handleBrackets(expression);
 
             String[] elements = expression.split(" ");
             for (int i = 0; i <elements.length; i++) {
-                if(isOperator(elements[i])) operators.add(elements[i]);
+                if(isOperator(elements[i])) operators.add(elements[i].charAt(0));
                 else
                     operands.add(Float.parseFloat(elements[i])) ;
             }
