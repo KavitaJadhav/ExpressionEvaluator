@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="Inkavitama" id="0" name="ExpEvalTest" package="kavitama.ExpressionEvaluator" skipped="0" tests="33" time="0.134" timestamp="2014-01-24T09:02:09">
+  <testsuite errors="0" failures="0" hostname="Inkavitama" id="0" name="ExpEvalTest" package="kavitama.ExpressionEvaluator" skipped="0" tests="33" time="0.132" timestamp="2014-01-24T09:21:41">
       <properties>
           <property name="ant.project.invoked-targets" value="createZip" />
 
@@ -100,7 +100,7 @@
 
           <property name="java.vm.specification.version" value="1.7" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner kavitama.ExpressionEvaluator.ExpEvalTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,d:\projects\expression-evaluator\build\code-coverage\reports\xml\TEST-kavitama.ExpressionEvaluator.ExpEvalTest.xml crashfile=d:\projects\expression-evaluator\junitvmwatcher8673138559273515440.properties propsfile=d:\projects\expression-evaluator\junit8878355124577155101.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner kavitama.ExpressionEvaluator.ExpEvalTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,d:\projects\expression-evaluator\build\code-coverage\reports\xml\TEST-kavitama.ExpressionEvaluator.ExpEvalTest.xml crashfile=d:\projects\expression-evaluator\junitvmwatcher2303895472242207322.properties propsfile=d:\projects\expression-evaluator\junit6918660983984939310.properties" />
 
           <property name="java.home" value="c:\Program Files\Java\jdk1.7.0_45\jre" />
 
@@ -138,31 +138,35 @@
 
       </properties>
 
-      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionAddTwoNegativeIntNumber" time="0.003" />
+      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionSubstractTwoNegativeIntNumber" time="0.003" />
 
-      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionAddTwoIntNumber" time="0.0" />
+      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionMultiplyTwoNegativeIntNumber" time="0.001" />
 
-      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionAddTwoIntNumber1" time="0.0" />
+      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionAddTwoNegativeIntNumber" time="0.001" />
+
+      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionAddTwoIntNumber" time="0.001" />
+
+      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionAddTwoIntNumber1" time="0.001" />
 
       <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionSubstractTwoIntNumber" time="0.0" />
 
-      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionMultiplyTwoIntNumber" time="0.0" />
+      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionMultiplyTwoIntNumber" time="0.001" />
 
-      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionDivideTwoIntNumber" time="0.0" />
+      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionDivideTwoIntNumber" time="0.001" />
 
-      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionTogetPowerOfIntNumber" time="0.0" />
+      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionTogetPowerOfIntNumber" time="0.001" />
 
-      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionTogetPowerOfIntNumber1" time="0.001" />
+      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionTogetPowerOfIntNumber1" time="0.0" />
 
       <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionDivideTwoNegativeIntNumber" time="0.0" />
 
-      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionAddTwoFloatNumber" time="0.001" />
+      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionAddTwoFloatNumber" time="0.0" />
 
-      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionSubstractTwoFloatNumber" time="0.001" />
+      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionSubstractTwoFloatNumber" time="0.0" />
 
       <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionMultiplyTwoFloatNumber" time="0.001" />
 
-      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionDivideTwoFloatNumber" time="0.0" />
+      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionDivideTwoFloatNumber" time="0.001" />
 
       <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionPowerTwoFloatNumber" time="0.0" />
 
@@ -182,34 +186,30 @@
 
       <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="HandleNestedBracketWithFloatOperands" time="0.001" />
 
-      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="ExpressionwithoutspaceNegativeNumbers" time="0.0" />
+      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="ExpressionwithoutspaceNegativeNumbers" time="0.001" />
 
-      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="Expressionwithoutspacebrackets" time="0.0" />
+      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="Expressionwithoutspacebrackets" time="0.001" />
 
       <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="ExpressionwithoutspaceBracketwithNegative" time="0.001" />
 
       <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="ExpressionwithoutspaceNestedBracket" time="0.001" />
 
-      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionSubstractTwoNegativeIntNumber" time="0.0" />
-
-      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="evaluateExpressionMultiplyTwoNegativeIntNumber" time="0.0" />
+      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="testHandleBrackets" time="0.001" />
 
       <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="checkIsOperator" time="0.0" />
 
-      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="Expressionwithoutspace" time="0.001" />
-
-      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="ExpressionWithOneOperand" time="0.001" />
+      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="ExpressionWithOneOperand" time="0.0" />
 
       <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="ExpressionWithTwoMinus" time="0.0" />
 
-      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="testHandleBrackets" time="0.001" />
+      <testcase classname="kavitama.ExpressionEvaluator.ExpEvalTest" name="Expressionwithoutspace" time="0.0" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Inkavitama" id="1" name="OperationsTest" package="kavitama.ExpressionEvaluator" skipped="0" tests="5" time="0.103" timestamp="2014-01-24T09:02:11">
+  <testsuite errors="0" failures="0" hostname="Inkavitama" id="1" name="OperationsTest" package="kavitama.ExpressionEvaluator" skipped="0" tests="5" time="0.096" timestamp="2014-01-24T09:21:42">
       <properties>
           <property name="ant.project.invoked-targets" value="createZip" />
 
@@ -309,7 +309,7 @@
 
           <property name="java.vm.specification.version" value="1.7" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner kavitama.ExpressionEvaluator.OperationsTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,d:\projects\expression-evaluator\build\code-coverage\reports\xml\TEST-kavitama.ExpressionEvaluator.OperationsTest.xml crashfile=d:\projects\expression-evaluator\junitvmwatcher4863629166616507310.properties propsfile=d:\projects\expression-evaluator\junit8051929387702169152.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner kavitama.ExpressionEvaluator.OperationsTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,d:\projects\expression-evaluator\build\code-coverage\reports\xml\TEST-kavitama.ExpressionEvaluator.OperationsTest.xml crashfile=d:\projects\expression-evaluator\junitvmwatcher4595113280883738046.properties propsfile=d:\projects\expression-evaluator\junit7878552031293158348.properties" />
 
           <property name="java.home" value="c:\Program Files\Java\jdk1.7.0_45\jre" />
 
@@ -351,7 +351,7 @@
 
       <testcase classname="kavitama.ExpressionEvaluator.OperationsTest" name="divideTwoIntNumber" time="0.0" />
 
-      <testcase classname="kavitama.ExpressionEvaluator.OperationsTest" name="getPowerOfIntNumber" time="0.0" />
+      <testcase classname="kavitama.ExpressionEvaluator.OperationsTest" name="getPowerOfIntNumber" time="0.001" />
 
       <testcase classname="kavitama.ExpressionEvaluator.OperationsTest" name="addWillAddTwodoubleNumber" time="0.0" />
 
