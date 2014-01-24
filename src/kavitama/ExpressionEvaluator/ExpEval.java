@@ -4,29 +4,12 @@ package kavitama.ExpressionEvaluator;
 import java.util.ArrayList;
 import java.util.List;
 
-class Operations{
-    public  float add(float num1 ,float num2){
-        return (num1 + num2);
-    }
-    public  float substract(float num1 ,float num2){
-        return (num1 - num2);
-    }
-    public  float multiply(float num1 ,float num2){
-        return (num1 * num2);
-    }
-    public  float divide(float num1 ,float num2){
-        return (num1 / num2);
-    }
-    public double power(float num1, float num2){
-        return Math.pow(num1 ,num2);
-    }
-}
 public class ExpEval extends Operations {
     public boolean isOperator(String element){
         return (element.contains("+") || element.endsWith("-") || element.contains("*") || element.contains("/")|| element.contains("^"));
     }
-    public float performOperation(List<Character> operators , List<Float> operands){
-        float result = operands.get(0);
+    public double performOperation(List<Character> operators , List<Double> operands ){
+        double result = operands.get(0);
         int i=1;
         for (Character operator : operators) {
             switch (operator){
@@ -45,14 +28,14 @@ public class ExpEval extends Operations {
                     result = divide(result, operands.get(i++));
                     break;
                 case '^':
-                    result = (float)power(result, operands.get(i++));
+                    result = power(result, operands.get(i++));
                     break;
             }
         }
         return result;
     }
 
-    public String handleBrackets(String expression){
+    public String handleBrackets(String expression) throws Exception {
         int startIndex = 0 ,endIndex = 0;
         for (int i = 0; i < expression.length() ; i++) {
             if(expression.charAt(i) == '(') startIndex = i;
@@ -80,19 +63,20 @@ public class ExpEval extends Operations {
             .replaceAll("\\( - ","(-")
             .trim();
     }
-    public double evaluateExpression(String expression){
-        List<Float> operands = new ArrayList();
+    public double evaluateExpression(String expression) throws Exception {
+        List<Double> operands = new ArrayList();
         List<Character> operators = new ArrayList();
 
         expression = replaceWithSpace(expression);
         while (expression.contains("("))    expression = handleBrackets(expression);
         expression = replaceWithSpace(expression);
-        String[] elements = expression.split(" ");
 
+        String[] elements = expression.split(" ");
+        if(isOperator(elements[elements.length-1])) throw new Exception("Wrong expression...");
             for (int i = 0; i <elements.length; i++) {
                 if(isOperator(elements[i])) operators.add(elements[i].charAt(0));
                 else
-                    operands.add(Float.parseFloat(elements[i])) ;
+                    operands.add(Double.parseDouble(elements[i])) ;
             }
         return performOperation(operators ,operands);
     }

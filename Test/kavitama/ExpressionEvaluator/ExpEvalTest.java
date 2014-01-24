@@ -125,7 +125,7 @@ public class ExpEvalTest extends ExpEval {
     @Test
     public void evaluateExpressionSubstractTwoFloatNumber() throws Exception {
         String expression = "4.5 - 5.8";
-        float expected = -1.3000002f;
+        float expected = -1.3f;
 
         float actual = (float)evaluateExpression(expression);
 
@@ -143,7 +143,7 @@ public class ExpEvalTest extends ExpEval {
     @Test
     public void evaluateExpressionDivideTwoFloatNumber() throws Exception {
         String expression = "4.5 / 5.8";
-        float expected = 0.77586204f;
+        float expected = 0.7758621f;
 
         float actual = (float)evaluateExpression(expression);
 
