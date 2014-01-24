@@ -42,6 +42,7 @@ public class OperationsTest extends Operations {
 
         assertEquals(actual ,expected);
     }
+
     @Test
     public void getPowerOfIntNumber() throws Exception {
         float num1 = 2 ,num2 =32;

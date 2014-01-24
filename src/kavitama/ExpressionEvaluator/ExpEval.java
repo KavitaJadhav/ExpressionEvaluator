@@ -5,24 +5,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Operations{
-    public float RoundUptoThreeDecimalPoint(float number){
-        float result = number * 1000;
-        result = Math.round(result);
-        return result / 1000;
-    }
     public  float add(float num1 ,float num2){
-        return RoundUptoThreeDecimalPoint((num1 + num2));
+        return (num1 + num2);
     }
     public  float substract(float num1 ,float num2){
-        return RoundUptoThreeDecimalPoint((num1 - num2));
+        return (num1 - num2);
     }
     public  float multiply(float num1 ,float num2){
-        return RoundUptoThreeDecimalPoint((num1 * num2));
+        return (num1 * num2);
     }
     public  float divide(float num1 ,float num2){
-        float result = (num1 / num2) * 100;
-        result = Math.round(result);
-        return result / 100;
+        return (num1 / num2);
     }
     public double power(float num1, float num2){
         return Math.pow(num1 ,num2);
@@ -74,7 +67,7 @@ public class ExpEval extends Operations {
     }
     public String replaceWithSpace(String expression){
         return expression.trim()
-            .replaceAll("\\+"," + ")
+            .replaceAll("\\+", " + ")
             .replaceAll("\\-"," - ")
             .replaceAll("\\*"," * ")
             .replaceAll("\\/"," / ")
@@ -82,7 +75,9 @@ public class ExpEval extends Operations {
             .replaceAll("  - "," -")
             .replaceAll("^ - ", "-")
             .replaceAll(" +"," ")
-            .replaceAll("\\( - ","(-");
+            .replaceAll("\\( - ","(-")
+            .replaceAll("\\--", " + ")
+            .trim();
     }
     public double evaluateExpression(String expression){
         List<Float> operands = new ArrayList();
@@ -90,8 +85,9 @@ public class ExpEval extends Operations {
 
         expression = replaceWithSpace(expression);
         while (expression.contains("("))    expression = handleBrackets(expression);
+        expression = replaceWithSpace(expression);
+        String[] elements = expression.split(" ");
 
-            String[] elements = expression.split(" ");
             for (int i = 0; i <elements.length; i++) {
                 if(isOperator(elements[i])) operators.add(elements[i].charAt(0));
                 else
