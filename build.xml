@@ -6,7 +6,7 @@
 
     <path id="cobertura.classpath">
         <fileset dir="ExternalLibraries">
-            <include name="cobertura-2.0.1.jar" />
+            <include name="cobertura-2.0.3.jar" />
             <include name="**/*.jar" />
         </fileset>
     </path>
@@ -129,6 +129,6 @@
     </target>
 
     <target name="createZip" depends="copyReadMe">
-        <zip zipFile = "build/ExpEval-0.8.zip" basedir = "build/dist"></zip>
+        <zip zipFile = "build/ExpEval-0.8.1.zip" basedir = "build/dist"></zip>
     </target>
 </project>
