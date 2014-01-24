@@ -13,16 +13,27 @@ Use shell file to run evaluator.
 ReleaseNotes :
 --------------
 
-Space is mandatory between operator and operand;
+Space is mandatory between operator and operand(for versions 0,1 to 0,6);
 
 Brackets are not allowed (for versions 0,1 to 0,4).
+
+Release 0.8
+--------------
+
+Working for no spaces between operand and operator
+
+gives operand if has only one operand
+
+`Example - jk_ExpEval.sh "operand1+((operand2*operand3)/(operand4^operand5))" `
+
+`Example - jk_ExpEval.sh "1+((2.5*3)/(10^-2))"        output : 751.0`
 
 
 Release 0.7
 --------------
 working with nested brackets.
 
-Space is not allowed between bracket and operand.
+Working for no spaces between operand and operator
 
 `Example - jk_ExpEval.sh "operand1  + ((operand2 * operand3) / (operand4 ^ operand 5))" `
 
@@ -47,8 +58,6 @@ Space is not allowed between bracket and operand.
 `Example - jk_ExpEval.sh "operand1  + (operand2 * operand3) / operand4 ^ operand 5" `
 
 `Example - jk_ExpEval.sh "10 - (-5.0 * 2.0) / 10"        output : 2.0`
-
-
 
 Release 0.4
 --------------

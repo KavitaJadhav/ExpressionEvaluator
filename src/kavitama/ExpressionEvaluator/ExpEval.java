@@ -28,13 +28,14 @@ public class ExpEval extends Operations {
     public float performOperation(List<Character> operators , List<Float> operands){
         float result = operands.get(0);
         int i=1;
-        if(operands.size() == 1) return operands.get(0);
         for (Character operator : operators) {
             switch (operator){
                 case '+':
+                    if(operands.size() == 1) return operands.get(0);
                     result = add(result ,operands.get(i++));
                     break;
                 case '-':
+                    if(operands.size() == 1) return operands.get(0);
                     result = substract(result ,operands.get(i++));
                     break;
                 case '*':
@@ -67,6 +68,7 @@ public class ExpEval extends Operations {
     }
     public String replaceWithSpace(String expression){
         return expression.trim()
+            .replaceAll("\\--", "+")
             .replaceAll("\\+", " + ")
             .replaceAll("\\-"," - ")
             .replaceAll("\\*"," * ")
@@ -76,7 +78,6 @@ public class ExpEval extends Operations {
             .replaceAll("^ - ", "-")
             .replaceAll(" +"," ")
             .replaceAll("\\( - ","(-")
-            .replaceAll("\\--", " + ")
             .trim();
     }
     public double evaluateExpression(String expression){

@@ -53,6 +53,6 @@
     </target>
 
     <target name="createZip" depends="copyReadMe">
-        <zip zipFile = "build/ExpEval-0.7.zip" basedir = "build/dist"></zip>
+        <zip zipFile = "build/ExpEval-0.8.zip" basedir = "build/dist"></zip>
     </target>
 </project>
