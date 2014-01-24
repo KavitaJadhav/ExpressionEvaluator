@@ -4,27 +4,12 @@
         <delete dir = "build"></delete>
     </target>
 
-    <path id="cobertura.classpath">
-        <fileset dir="ExternalLibraries">
-            <include name="cobertura-2.0.3.jar" />
-            <include name="**/*.jar" />
-        </fileset>
-    </path>
-
-    <taskdef classpathref="cobertura.classpath" resource="tasks.properties"/>
-
     <target name = "createDir" depends="clean">
         <mkdir dir = "build"></mkdir>
         <mkdir dir = "build/src"></mkdir>
         <mkdir dir = "build/test"></mkdir>
         <mkdir dir = "build/dist/bin"></mkdir>
         <mkdir dir = "build/dist/lib"></mkdir>
-        <mkdir dir="build/code-coverage/instrumented" />
-        <mkdir dir="build/code-coverage/reports/xml" />
-        <mkdir dir="build/code-coverage/reports/html" />
-        <mkdir dir="build/code-coverage/coverage/xml" />
-        <mkdir dir="build/code-coverage/coverage/summaryxml" />
-        <mkdir dir="build/code-coverage/coverage/html" />
 
     </target>
 
@@ -55,68 +40,7 @@
         </junit>
     </target>
 
-    <target name="instrument" depends="runTest">
-        <delete file="cobertura.ser"/>
-        <delete dir="build/code-coverage/instrumented" />
-
-        <cobertura-instrument todir="build/code-coverage/instrumented">
-            <fileset dir="build/src">
-                <include name="**/*.class" />
-            </fileset>
-        </cobertura-instrument>
-    </target>
-
-    <target name="test-coverage" depends="runTest">
-        <junit fork="yes" dir="." failureProperty="test.failed">
-            <classpath>
-                <pathelement location="build/code-coverage/instrumented"/>
-                <pathelement location="build/src" />
-                <pathelement location="build/test" />
-                <pathelement location="external-lib/junit-4.10.jar"/>
-            </classpath>
-
-            <classpath refid= "cobertura.classpath"/>
-
-            <formatter type="xml" />
-            <test name="testcase" todir="build/code-coverage/reports/xml" if="testcase" />
-            <batchtest todir="build/code-coverage/reports/xml" unless="testcase">
-                <fileset dir="test">
-                    <include name="**/*Test.java" />
-                </fileset>
-            </batchtest>
-        </junit>
-        <junitreport todir="build/code-coverage/reports/xml">
-            <fileset dir="build/code-coverage/reports/xml">
-                <include name="TEST-*.xml" />
-            </fileset>
-            <report format="frames" todir="build/code-coverage/reports/html" />
-        </junitreport>
-    </target>
-
-    <target name="coverage-check">
-        <cobertura-check branchrate="34" totallinerate="100" />
-    </target>
-
-    <target name="coverage-report">
-        <cobertura-report srcdir="src" destdir="build/code-coverage/coverage/xml" format="xml" />
-    </target>
-
-    <target name="summary-coverage-report">
-        <cobertura-report srcdir="src" destdir="build/code-coverage/coverage/summaryxml" format="summaryXml" />
-    </target>
-
-    <target name="alternate-coverage-report">
-        <cobertura-report destdir="build/code-coverage/coverage/html">
-            <fileset dir="src">
-                <include name="**/*.java"/>
-            </fileset>
-        </cobertura-report>
-    </target>
-    <target name="coverage"
-            depends="instrument,test-coverage,coverage-report,summary-coverage-report,alternate-coverage-report"
-            description="Compile, instrument ourself, run the tests and generate JUnit and coverage reports."/>
-
-    <target name="createJar" depends="coverage">
+    <target name="createJar" depends="runTest">
         <jar destfile = "build/dist/lib/expression-evaluator.jar" basedir = "build/src"></jar>
     </target>
 
@@ -129,6 +53,6 @@
     </target>
 
     <target name="createZip" depends="copyReadMe">
-        <zip zipFile = "build/ExpEval-0.8.1.zip" basedir = "build/dist"></zip>
+        <zip zipFile = "build/ExpEval-0.8.zip" basedir = "build/dist"></zip>
     </target>
 </project>
