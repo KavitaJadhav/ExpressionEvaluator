@@ -35,6 +35,7 @@ public class ExpEval extends Operations {
     public float performOperation(List<Character> operators , List<Float> operands){
         float result = operands.get(0);
         int i=1;
+        if(operands.size() == 1) return operands.get(0);
         for (Character operator : operators) {
             switch (operator){
                 case '+':

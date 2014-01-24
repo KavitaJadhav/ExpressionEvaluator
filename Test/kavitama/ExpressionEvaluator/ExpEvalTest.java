@@ -284,5 +284,14 @@ public class ExpEvalTest extends ExpEval {
 
         assertEquals(expected , actual);
     }
+    @Test
+    public void Expressionwithoneoperand() throws Exception {
+        String expression = "-10";
+        float expected = -10;
+
+        float actual = (float)evaluateExpression(expression);
+
+        assertEquals(expected , actual);
+    }
 }
 
