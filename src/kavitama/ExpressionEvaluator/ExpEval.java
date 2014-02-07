@@ -1,8 +1,7 @@
 
 package kavitama.ExpressionEvaluator;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class ExpEval {
     public boolean isOperator(String element){
@@ -12,8 +11,13 @@ public class ExpEval {
     public double performOperation(List<Operator> operators , List<Double> operands ){
         double result = operands.get(0);
         int i=1;
-        for (Operator operator : operators)
+        if (operands.size() == 1 && ( operators.size() == 0 ||
+                Arrays.asList(PlusOperator.class,MinusOperator.class).
+                        contains(operators.get(0).getClass())))
+            return operands.get(0);
+        for (Operator operator : operators){
             result = operator.perform(result,operands.get(i++));
+        }
         return result;
     }
 
@@ -64,10 +68,13 @@ public class ExpEval {
     }
 
     private Operator getOperator(String element) {
-        if(element.equals("+")) return new PlusOperator();
-        if(element.equals("-")) return new MinusOperator();
-        if(element.equals("*")) return new MultiplyOperator();
-        if(element.equals("/")) return new DivideOperator();
-        return new ExclusiveOperator();
+        Map<String , Operator> operatorMap = new HashMap<String, Operator>();
+        operatorMap.put("+",new PlusOperator());
+        operatorMap.put("-",new MinusOperator());
+        operatorMap.put("*",new MultiplyOperator());
+        operatorMap.put("/",new DivideOperator());
+        operatorMap.put("^",new ExclusiveOperator());
+
+        return operatorMap.get(element);
     }
 }

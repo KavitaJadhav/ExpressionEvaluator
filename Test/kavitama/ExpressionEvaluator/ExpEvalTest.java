@@ -224,19 +224,25 @@ public class ExpEvalTest extends ExpEval {
 
         assertEquals(-65d , actual,0.01);
     }
-//    @Test
-//    public void ExpressionWithOneOperand() throws Exception {
-//
-//        double actual = evaluateExpression("-(-10)");
-//
-//        assertEquals((double) 10, actual,0.01);
-//    }
     @Test
     public void ExpressionWithTwoMinus() throws Exception {
 
         double actual = evaluateExpression("2.25 -- 0.25");
 
         assertEquals((double) 2.50f, actual,0.01);
+    }
+    @Test
+    public void ExpressionWithOneOperand() throws Exception {
+
+        double actual = evaluateExpression("-(-10)");
+
+        assertEquals(10d, actual,0.01);
+    }
+
+    @Test (expected = Exception.class)
+    public void ExpressionWithMultiplicationOperatorAndOneOperand() throws Exception {
+
+        evaluateExpression("*10");
     }
 }
 
