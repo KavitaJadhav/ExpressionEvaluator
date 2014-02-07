@@ -6,93 +6,71 @@ import static junit.framework.Assert.assertEquals;
 public class ExpEvalTest extends ExpEval {
     @Test
     public void evaluateExpressionAddTwoIntNumber() throws Exception {
-        String expression = "4 + 5";
-        float expected = 9;
 
-        float actual = (float)evaluateExpression(expression);
-
-        assertEquals(expected , actual);
+        double actual = evaluateExpression("4 + 5");
+        assertEquals(9.0d , actual,0.01);
     }
     @Test
     public void evaluateExpressionAddTwoNegativeIntNumber() throws Exception {
-        String expression = "-4 + -5";
-        float expected = -9;
 
-        float actual = (float)evaluateExpression(expression);
-
-        assertEquals(expected , actual);
+        double actual = evaluateExpression("-4 + -5");
+        assertEquals(-9.0d , actual,0.01);
     }
     @Test
     public void evaluateExpressionAddTwoIntNumber1() throws Exception {
-        String expression = "40 + 50";
-        float expected = 90;
 
-        float actual = (float)evaluateExpression(expression);
-
-        assertEquals(expected , actual);
+        double actual = evaluateExpression("40 + 50");
+        assertEquals(90d , actual,0.01);
     }
     @Test
     public void evaluateExpressionSubstractTwoIntNumber() throws Exception {
-        String expression = "10 - 5";
-        float expected = 5;
 
-        float actual = (float)evaluateExpression(expression);
-
-        assertEquals(expected , actual);
+        double actual = (double)evaluateExpression("10 - 5");
+        assertEquals(5d , actual,0.01);
     }
     @Test
     public void evaluateExpressionSubstractTwoNegativeIntNumber() throws Exception {
-        String expression = "10 - -5";
-        float expected = 15;
 
-        float actual = (float)evaluateExpression(expression);
+        double actual = (double)evaluateExpression("10 - -5");
 
-        assertEquals(expected , actual);
+        assertEquals(15d, actual,0.01);
     }
     @Test
     public void evaluateExpressionMultiplyTwoIntNumber() throws Exception {
-        String expression = "10 * 5";
-        float expected = 50;
 
-        float actual = (float)evaluateExpression(expression);
+        double actual = evaluateExpression("10 * 5");
 
-        assertEquals(expected , actual);
+        assertEquals((double) 50, actual,0.01);
     }
     @Test
     public void evaluateExpressionMultiplyTwoNegativeIntNumber() throws Exception {
-        String expression = "-10 * 5";
-        float expected = -50;
 
-        float actual = (float)evaluateExpression(expression);
+        double actual = evaluateExpression("-10 * 5");
 
-        assertEquals(expected , actual);
+        assertEquals((double) -50, actual,0.01);
     }
     @Test
     public void evaluateExpressionDivideTwoIntNumber() throws Exception {
-        String expression = "22 / 7";
-        float expected = 3.142857f;
 
-        float actual = (float)evaluateExpression(expression);
+        double actual = evaluateExpression("22 / 7");
 
-        assertEquals(expected , actual);
+        assertEquals((double) 3.142857f, actual,0.01);
     }
     @Test
     public void evaluateExpressionTogetPowerOfIntNumber() throws Exception {
-        String expression = "10 ^ 5";
         double expected = 100000;
 
-        double actual = evaluateExpression(expression);
+        double actual = evaluateExpression("10 ^ 5");
 
-        assertEquals(expected , actual);
+        assertEquals(expected , actual,0.01);
     }
     @Test
     public void evaluateExpressionTogetPowerOfIntNumber1() throws Exception {
-        String expression = "2 ^ 32";
         long expected = 4294967296l ;
 
-        long actual =(long) evaluateExpression(expression);
+        long actual =(long) evaluateExpression("2 ^ 32");
 
-        assertEquals(expected , actual);
+        assertEquals(expected , actual,0.01);
     }
     @Test
     public void checkIsOperator() throws Exception {
@@ -106,201 +84,159 @@ public class ExpEvalTest extends ExpEval {
     }
     @Test
     public void evaluateExpressionDivideTwoNegativeIntNumber() throws Exception {
-        String expression = "-10 / 5";
-        float expected = -2;
 
-        float actual = (float)evaluateExpression(expression);
+        double actual = evaluateExpression("-10 / 5");
 
-        assertEquals(expected , actual);
+        assertEquals((double) -2, actual,0.01);
     }
     @Test
     public void evaluateExpressionAddTwoFloatNumber() throws Exception {
-        String expression = "4.5 + 5.8";
-        float expected = 10.3f;
 
-        float actual = (float)evaluateExpression(expression);
+        double actual = evaluateExpression("4.5 + 5.8");
 
-        assertEquals(expected ,actual);
+        assertEquals((double) 10.3,actual,0.01);
     }
     @Test
     public void evaluateExpressionSubstractTwoFloatNumber() throws Exception {
-        String expression = "4.5 - 5.8";
-        float expected = -1.3f;
 
-        float actual = (float)evaluateExpression(expression);
+        double actual = evaluateExpression("4.5 - 5.8");
 
-        assertEquals(expected ,actual);
+        assertEquals((double) -1.3,actual,0.01);
     }
     @Test
     public void evaluateExpressionMultiplyTwoFloatNumber() throws Exception {
-        String expression = "4.5 * 5.8";
-        float expected = 26.1f;
+        double expected = 26.1f;
 
-        float actual = (float)evaluateExpression(expression);
+        double actual = evaluateExpression("4.5 * 5.8");
 
-        assertEquals(expected ,actual);
+        assertEquals(expected ,actual,0.01);
     }
     @Test
     public void evaluateExpressionDivideTwoFloatNumber() throws Exception {
-        String expression = "4.5 / 5.8";
-        float expected = 0.7758621f;
+        double expected = 0.7758621f;
 
-        float actual = (float)evaluateExpression(expression);
+        double actual = evaluateExpression("4.5 / 5.8");
 
-        assertEquals(expected ,actual);
+        assertEquals(expected ,actual,0.01);
     }
     @Test
     public void evaluateExpressionPowerTwoFloatNumber() throws Exception {
-        String expression = "-4.5 ^ 2";
-        float expected = 20.25f;
 
-        float actual = (float)evaluateExpression(expression);
+        double actual = evaluateExpression("-4.5 ^ 2");
 
-        assertEquals(expected ,actual);
+        assertEquals((double) 20.25,actual,0.01);
     }
     @Test
     public void evaluateExpressionNegativePowerTwoFloatNumber() throws Exception {
-        String expression = "2.0 ^ -3";
-        float expected = 0.125f;
 
-        float actual = (float)evaluateExpression(expression);
+        double actual = evaluateExpression("2.0 ^ -3");
 
-        assertEquals(expected ,actual);
+        assertEquals((double) 0.125,actual,0.01);
     }
     @Test
     public void evaluateExpressionMultipleIntOperands() throws Exception {
-        String expression = "10 - -5 * 2 / 10";
-        float expected = 3;
 
-        float actual = (float)evaluateExpression(expression);
+        double actual = evaluateExpression("10 - -5 * 2 / 10");
 
-        assertEquals(expected , actual);
+        assertEquals((double) 3, actual,0.01);
     }
     @Test
     public void evaluateExpressionMultipleFloatOperands() throws Exception {
-        String expression = "10.5 + 5.5 / 2.0 ^ 2 - 50";
-        float expected = 14;
 
-        float actual = (float)evaluateExpression(expression);
+        double actual = evaluateExpression("10.5 + 5.5 / 2.0 ^ 2 - 50");
 
-        assertEquals(expected , actual);
+        assertEquals((double) 14, actual,0.01);
     }
     @Test
     public void testHandleBrackets() throws Exception {
-        String expression = "10 - (5 * 2) + 5";
         String expected = "10 - 10.0 + 5";
 
-        String  actual = handleBrackets(expression);
+        String  actual = handleBrackets("10 - (5 * 2) + 5");
 
         assertEquals(expected , actual);
     }
     @Test
     public void HandleSimpleBracketWithIntOperands() throws Exception {
-        String expression = "10 - (5 * 2) + 5";
-        float expected = 5;
 
-        float actual = (float)evaluateExpression(expression);
+        double actual = evaluateExpression("10 - (5 * 2) + 5");
 
-        assertEquals(expected , actual);
+        assertEquals((double) 5, actual,0.01);
     }
     @Test
     public void HandleSimpleBracketWithFloatBrackets() throws Exception {
-        String expression = "10.5 - (5 * 2.5) + 5";
-        float expected = 3;
 
-        float actual = (float)evaluateExpression(expression);
+        double actual = evaluateExpression("10.5 - (5 * 2.5) + 5");
 
-        assertEquals(expected , actual);
+        assertEquals((double) 3, actual,0.01);
     }
     @Test
     public void HandleSimpleBracketWithIntOperands1() throws Exception {
-        String expression = "10 - (5 * 2) + 5 + (4 * 2) - (2.5 * 1.5)";
-        float expected = 9.25f;
 
-        float actual = (float)evaluateExpression(expression);
+        double actual = evaluateExpression("10 - (5 * 2) + 5 + (4 * 2) - (2.5 * 1.5)");
 
-        assertEquals(expected , actual);
+        assertEquals((double) 9.25, actual,0.01);
     }
     @Test
     public void HandleNestedBracketWithIntOperands() throws Exception {
-        String expression = "10 - ((5 * 2) + 5)";
-        float expected = -5;
 
-        float actual = (float)evaluateExpression(expression);
+        double actual = evaluateExpression("10 - ((5 * 2) + 5)");
 
-        assertEquals(expected , actual);
+        assertEquals((double) -5, actual,0.01);
     }
     @Test
     public void HandleNestedBracketWithFloatOperands() throws Exception {
-        String expression = "10.5 + ((5 * 2) + 0.5) ^ 2";
-        float expected = 441;
-        float actual = (float)evaluateExpression(expression);
+        double actual = evaluateExpression("10.5 + ((5 * 2) + 0.5) ^ 2");
 
-        assertEquals(expected , actual);
+        assertEquals((double) 441, actual,0.01);
     }
 
     @Test
     public void Expressionwithoutspace() throws Exception {
-        String expression = "10-5*2+5";
-        float expected = 15;
 
-        float actual = (float)evaluateExpression(expression);
+        double actual = evaluateExpression("10-5*2+5");
 
-        assertEquals(expected , actual);
+        assertEquals((double) 15, actual,0.01);
     }
     @Test
     public void ExpressionwithoutspaceNegativeNumbers() throws Exception {
-        String expression = "10--5*2+5";
-        float expected = 35;
 
-        float actual = (float)evaluateExpression(expression);
+        double actual = evaluateExpression("10--5*2+5");
 
-        assertEquals(expected , actual);
+        assertEquals((double) 35, actual,0.01);
     }
     @Test
-    public void Expressionwithoutspacebrackets() throws Exception {
-        String expression = "10-(5*2)+5";
-        float expected = 5;
+    public void ExpressionWithoutSpaceBrackets() throws Exception {
 
-        float actual = (float)evaluateExpression(expression);
+        double actual = evaluateExpression("10-(5*2)+5");
 
-        assertEquals(expected , actual);
+        assertEquals((double) 5, actual,0.01);
     }
     @Test
-    public void ExpressionwithoutspaceBracketwithNegative() throws Exception {
-        String expression = "10-(-5.0*2.5)+5";
-        float expected = 27.5f;
+    public void ExpressionWithoutSpaceBracketWithNegative() throws Exception {
 
-        float actual = (float)evaluateExpression(expression);
+        double actual = evaluateExpression("10-(-5.0*2.5)+5");
 
-        assertEquals(expected , actual);
+        assertEquals((double) 27.5f, actual,0.01);
     }
     @Test
-    public void ExpressionwithoutspaceNestedBracket() throws Exception {
-        String expression = "(10*(-5-2))+5";
-        float expected = -65;
+    public void ExpressionWithoutSpaceNestedBracket() throws Exception {
+        double actual = evaluateExpression("(10*(-5-2))+5");
 
-        float actual = (float)evaluateExpression(expression);
-
-        assertEquals(expected , actual);
+        assertEquals(-65d , actual,0.01);
     }
     @Test
     public void ExpressionWithOneOperand() throws Exception {
-        String expression = "-(-10)";
-        float expected = 10;
 
-        float actual = (float)evaluateExpression(expression);
+        double actual = evaluateExpression("-(-10)");
 
-        assertEquals(expected , actual);
+        assertEquals((double) 10, actual,0.01);
     }
     @Test
     public void ExpressionWithTwoMinus() throws Exception {
-        String expression = "2.25 -- 0.25";
-        float expected = 2.50f;
 
-        float actual = (float)evaluateExpression(expression);
+        double actual = evaluateExpression("2.25 -- 0.25");
 
-        assertEquals(expected , actual);
+        assertEquals((double) 2.50f, actual,0.01);
     }
 }
 
