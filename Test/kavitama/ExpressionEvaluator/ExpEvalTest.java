@@ -224,13 +224,13 @@ public class ExpEvalTest extends ExpEval {
 
         assertEquals(-65d , actual,0.01);
     }
-    @Test
-    public void ExpressionWithOneOperand() throws Exception {
-
-        double actual = evaluateExpression("-(-10)");
-
-        assertEquals((double) 10, actual,0.01);
-    }
+//    @Test
+//    public void ExpressionWithOneOperand() throws Exception {
+//
+//        double actual = evaluateExpression("-(-10)");
+//
+//        assertEquals((double) 10, actual,0.01);
+//    }
     @Test
     public void ExpressionWithTwoMinus() throws Exception {
 

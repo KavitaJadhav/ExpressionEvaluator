@@ -4,34 +4,16 @@ package kavitama.ExpressionEvaluator;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ExpEval extends Operations {
+public class ExpEval {
     public boolean isOperator(String element){
         return (element.contains("+") || element.endsWith("-") || element.contains("*") || element.contains("/")|| element.contains("^"));
     }
-    public double performOperation(List<Character> operators , List<Double> operands ){
+
+    public double performOperation(List<Operator> operators , List<Double> operands ){
         double result = operands.get(0);
         int i=1;
-        for (Character operator : operators) {
-            switch (operator){
-                case '+':
-                    if(operands.size() == 1) return operands.get(0);
-                    result = add(result ,operands.get(i++));
-                    break;
-                case '-':
-                    if(operands.size() == 1) return operands.get(0);
-                    result = substract(result ,operands.get(i++));
-                    break;
-                case '*':
-                    result = multiply(result, operands.get(i++));
-                    break;
-                case '/':
-                    result = divide(result, operands.get(i++));
-                    break;
-                case '^':
-                    result = power(result, operands.get(i++));
-                    break;
-            }
-        }
+        for (Operator operator : operators)
+            result = operator.perform(result,operands.get(i++));
         return result;
     }
 
@@ -65,7 +47,7 @@ public class ExpEval extends Operations {
     }
     public double evaluateExpression(String expression) throws Exception {
         List<Double> operands = new ArrayList();
-        List<Character> operators = new ArrayList();
+        List<Operator> operators = new ArrayList();
 
         expression = replaceWithSpace(expression);
         while (expression.contains("("))    expression = handleBrackets(expression);
@@ -74,10 +56,18 @@ public class ExpEval extends Operations {
         String[] elements = expression.split(" ");
         if(isOperator(elements[elements.length-1])) throw new Exception("Wrong expression...");
             for (int i = 0; i <elements.length; i++) {
-                if(isOperator(elements[i])) operators.add(elements[i].charAt(0));
+                if(isOperator(elements[i])) operators.add(getOperator(elements[i]));
                 else
                     operands.add(Double.parseDouble(elements[i])) ;
             }
         return performOperation(operators ,operands);
+    }
+
+    private Operator getOperator(String element) {
+        if(element.equals("+")) return new PlusOperator();
+        if(element.equals("-")) return new MinusOperator();
+        if(element.equals("*")) return new MultiplyOperator();
+        if(element.equals("/")) return new DivideOperator();
+        return new ExclusiveOperator();
     }
 }
